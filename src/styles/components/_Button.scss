@@ -1,0 +1,73 @@
+.cp-Button {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 0.16em;
+    padding: grid-space("xsmall");
+    transition: all $animation-duration;
+    cursor: pointer;
+    user-select: none;
+    backface-visibility: hidden;
+
+    .text {
+        display: inline-block;
+        margin: 0 grid-space("xxsmall");
+        // transform: translateY(-1px);
+        line-height: 1em;
+    }
+
+    svg {
+        display: inline-block;
+        vertical-align: text-top;
+        margin: 0 grid-space("xxsmall");
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.-small {
+        font-size: font-size("small");
+        padding: grid-space("xxsmall");
+    }
+
+    &.-medium {
+        font-size: font-size("medium");
+        padding: grid-space("xsmall");
+    }
+
+    &.-large {
+        font-size: font-size("large");
+        padding: grid-space("small");
+    }
+
+    &.-xlarge {
+        font-size: font-size("xlarge");
+        padding: grid-space("small");
+    }
+
+    &.-red {
+        color: white;
+        background: red;
+    }
+
+    &.-blue {
+        color: white;
+        background: blue;
+    }
+    
+    &.-green {
+        color: white;
+        background: green;
+    }
+    
+    &.-grey {
+        color: white;
+        background: grey;
+    }
+
+    &.-white {
+        color: black;
+        background: white;
+    }
+}

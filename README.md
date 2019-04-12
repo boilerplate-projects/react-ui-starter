@@ -1,2 +1,3 @@
-# react-ui-starter
-React UI library starter kit
+# React UI library Starter
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

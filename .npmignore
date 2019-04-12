@@ -1,0 +1,4 @@
+.storybook/
+.vscode/
+.public/
+src/

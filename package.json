@@ -1,0 +1,55 @@
+{
+  "name": "react-ui-starter",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "react-app"
+      ]
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "frontendler-sass": "^1.5.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-feather": "^1.1.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "2.1.8",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook-build": "build-storybook -c .storybook -o .out",
+    "build-lib-js": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build-lib-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o ./dist",
+    "build-lib": "npm run build-lib-js && npm run build-lib-css"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
+    "@storybook/addon-options": "^5.0.6",
+    "@storybook/addon-viewport": "^5.0.6",
+    "@storybook/react": "^5.0.6",
+    "node-sass-chokidar": "^1.2.2",
+    "surge": "^0.20.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
